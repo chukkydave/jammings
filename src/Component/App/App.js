@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-// import { SearchResults } from '../SearchResults/SearchResults';
+import { SearchResults } from '../SearchResults/SearchResults';
 import { SearchBar } from '../SearchBar/SearchBar';
 // import { PlayList } from '../PlayList/PlayList';
 
@@ -39,7 +39,7 @@ class App extends React.Component {
 				<div className="App">
 					<SearchBar />
 					<div className="App-playlist">
-						{/* <SearchResults searchResults={this.state.searchResults} /> */}
+						<SearchResults searchResults={this.state.searchResults} />
 						{/* <PlayList /> */}
 					</div>
 				</div>
