@@ -32,6 +32,7 @@ class App extends React.Component {
 			playlistTracks: [],
 		};
 		this.addTrack = this.addTrack.bind(this);
+		this.removeTrack = this.removeTrack.bind(this);
 	}
 
 	addTrack(track) {
@@ -46,6 +47,25 @@ class App extends React.Component {
 				playlistTracks: playlistArr,
 			});
 		}
+	}
+
+	removeTrack(track) {
+		let trackId = track.id;
+		let playlistArr = this.state.playlistTracks;
+		playlistArr.forEach((val, ind) => {
+			if (val.id === trackId) {
+				playlistArr.splice(ind, 1);
+			}
+		});
+		this.setState({
+			playlistTracks: playlistArr,
+		});
+		// const result = playlistArr.filter((singleTrack, index) => {
+		//   if (trackId === singleTrack.id) {
+		//     playlistArr.splice(index,1)
+		//   }
+		// 	return trackId === singleTrack.id;
+		// });
 	}
 
 	render() {
@@ -64,6 +84,7 @@ class App extends React.Component {
 						<PlayList
 							playlistName={this.state.playlistName}
 							playlistTracks={this.state.playlistTracks}
+							onRemove={this.removeTrack}
 						/>
 					</div>
 				</div>

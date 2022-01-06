@@ -12,7 +12,8 @@ export class TrackList extends React.Component {
 							<Track
 								tracky={track}
 								key={track.id}
-								// isRemoval={this.props.isRemoval}
+								isRemoval={this.props.isRemoval}
+								onRemove={this.props.onRemove}
 								onAdd={this.props.onAdd}
 							/>
 						);
