@@ -1,4 +1,5 @@
 import React from 'react';
+import './Track.css';
 
 export class Track extends React.Component {
 	// constructor(props) {
@@ -18,8 +19,10 @@ export class Track extends React.Component {
 		return (
 			<div className="Track">
 				<div className="Track-information">
-					<h3>Name</h3>
-					<p>Track artist | album Name</p>
+					<h3>{this.props.tracky.name}</h3>
+					<p>
+						{this.props.tracky.artist} | {this.props.tracky.album}
+					</p>
 				</div>
 				{/* <button className="Track-action">-</button> */}
 				{this.renderAction()}
