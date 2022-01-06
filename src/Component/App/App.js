@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { SearchResults } from '../SearchResults/SearchResults';
 import { SearchBar } from '../SearchBar/SearchBar';
-// import { PlayList } from '../PlayList/PlayList';
+import { PlayList } from '../PlayList/PlayList';
 
 class App extends React.Component {
 	constructor(props) {
@@ -40,7 +40,7 @@ class App extends React.Component {
 					<SearchBar />
 					<div className="App-playlist">
 						<SearchResults searchResults={this.state.searchResults} />
-						{/* <PlayList /> */}
+						<PlayList />
 					</div>
 				</div>
 			</div>
