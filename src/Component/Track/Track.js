@@ -26,11 +26,11 @@ export class Track extends React.Component {
 	}
 
 	addTrack(e) {
-		e.preventDefault();
+		// e.preventDefault();
 		this.props.onAdd(this.props.tracky);
 	}
 	removeTrack(e) {
-		e.preventDefault();
+		// e.preventDefault();
 		this.props.onRemove(this.props.tracky);
 	}
 

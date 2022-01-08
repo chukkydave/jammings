@@ -20,7 +20,7 @@ export class PlayList extends React.Component {
 				<input defaultValue={this.props.playlistName} onChange={this.handleNameChange} />
 				{/* <!-- Add a TrackList component --> */}
 				<TrackList
-					playlistTracks={this.props.playlistTracks}
+					tracks={this.props.playlistTracks}
 					onRemove={this.props.onRemove}
 					isRemoval={true}
 				/>
