@@ -1,7 +1,7 @@
 // import { SearchBar } from '../Component/SearchBar/SearchBar';
 
 const clientId = 'a2a8e34dcee54f72aae47b8dedb6e024';
-const redirectURL = 'http://localhost:3000/';
+const redirectURL = 'http://chuks_jam.surge.sh';
 let accessToken;
 const Spotify = {
 	getAccessToken() {
